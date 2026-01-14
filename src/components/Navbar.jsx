@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Shield, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
+import logo from '../assets/afpt_logo.jpg';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
+    const isHomePage = location.pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,16 +27,16 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4 text-white'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${(scrolled || !isHomePage) ? 'bg-white shadow-md py-2' : 'bg-transparent py-4 text-white'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <Link to="/" className="flex items-center space-x-2">
-                        <div className={`p-2 rounded-full ${scrolled ? 'bg-primary text-white' : 'bg-white text-primary'}`}>
-                            <Shield size={24} />
+                        <div className={`w-10 h-10 rounded-full overflow-hidden flex items-center justify-center ${(scrolled || !isHomePage) ? 'bg-primary' : 'bg-white'}`}>
+                            <img src={logo} alt="AFPT Logo" className="w-full h-full object-cover" />
                         </div>
                         <div>
-                            <span className={`text-xl font-bold font-display block leading-none ${scrolled ? 'text-primary' : 'text-white'}`}>AFPT</span>
-                            <span className={`text-[10px] uppercase tracking-widest font-semibold block ${scrolled ? 'text-slate-600' : 'text-white/80'}`}>KOCHI</span>
+                            <span className={`text-xl font-bold font-display block leading-none ${(scrolled || !isHomePage) ? 'text-primary' : 'text-white'}`}>AFPT</span>
+                            <span className={`text-[10px] uppercase tracking-widest font-semibold block ${(scrolled || !isHomePage) ? 'text-slate-600' : 'text-white/80'}`}>KOCHI</span>
                         </div>
                     </Link>
 
@@ -45,8 +47,8 @@ const Navbar = () => {
                                 key={link.name}
                                 to={link.path}
                                 className={`text-sm font-semibold uppercase tracking-wider hover:text-primary transition-colors ${location.pathname === link.path
-                                        ? scrolled ? 'text-primary' : 'text-defence-saffron'
-                                        : scrolled ? 'text-slate-700' : 'text-white'
+                                    ? (scrolled || !isHomePage) ? 'text-primary' : 'text-defence-saffron'
+                                    : (scrolled || !isHomePage) ? 'text-slate-700' : 'text-white'
                                     }`}
                             >
                                 {link.name}
@@ -61,7 +63,7 @@ const Navbar = () => {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className={`${scrolled ? 'text-primary' : 'text-white'} hover:opacity-80`}
+                            className={` ${(scrolled || !isHomePage) ? 'text-primary' : 'text-white'} hover:opacity-80`}
                         >
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>

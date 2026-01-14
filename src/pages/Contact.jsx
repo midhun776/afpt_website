@@ -6,7 +6,18 @@ const Contact = () => {
     return (
         <div className="pt-24 pb-20">
             <section className="container mx-auto px-4">
-                <SectionHeader title="Get in Touch" subtitle="Contact AFPT Kochi" />
+                <SectionHeader
+    title={
+      <>
+        Contact AFPT Kochi
+      </>
+    }
+    subtitle={
+      <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
+        Get in Touch
+      </span>
+    }
+  />
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     {/* Contact Information */}

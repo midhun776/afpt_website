@@ -10,7 +10,7 @@ const Programs = () => {
             icon: <Target className="text-white" size={32} />,
             color: 'bg-[#4B5320]', // Army Green
             details: ['GD, Soldier Technical', 'Clerk / SKT', 'Nursing Asst', 'Tradesman'],
-            image: 'https://images.unsplash.com/photo-1590403444453-625acc9c8114?auto=format&fit=crop&q=80&w=800'
+            image: 'https://wallpapers.com/images/hd/marching-indian-army-sjs3875ri3m6tmi5.jpg'
         },
         {
             title: 'Indian Navy Preparation',
@@ -18,7 +18,7 @@ const Programs = () => {
             icon: <Anchor className="text-white" size={32} />,
             color: 'bg-[#000080]', // Navy Blue
             details: ['SSR / AA', 'MR (Matric Recruit)', 'Technical Branch', 'Physical Proficiency'],
-            image: 'https://images.unsplash.com/photo-1547053648-439ba99cd048?auto=format&fit=crop&q=80&w=800'
+            image: 'https://images.pexels.com/photos/29850312/pexels-photo-29850312/free-photo-of-indian-naval-officers-marching-in-formation.jpeg'
         },
         {
             title: 'Indian Air Force Preparation',
@@ -26,7 +26,7 @@ const Programs = () => {
             icon: <Plane className="text-white" size={32} />,
             color: 'bg-[#5D8AA8]', // Airforce Blue
             details: ['Airmen X & Y Group', 'Technical Trades', 'Non-Technical Trades', 'AFCAT Guidance'],
-            image: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80&w=800'
+            image: 'https://wallpapercave.com/wp/wp3499071.jpg'
         },
         {
             title: 'Paramilitary Forces',
@@ -34,7 +34,7 @@ const Programs = () => {
             icon: <Landmark className="text-white" size={32} />,
             color: 'bg-[#8B4513]', // Saddle Brown
             details: ['SSC GD (BSF, CRPF, CISF)', 'ITBP / SSB', 'Assam Rifles', 'Constable / SI Prep'],
-            image: 'https://images.unsplash.com/photo-1508100134119-f2bf1e321338?auto=format&fit=crop&q=80&w=800'
+            image: 'https://w0.peakpx.com/wallpaper/724/101/HD-wallpaper-special-forces-indian-army.jpg'
         },
         {
             title: 'Police & Uniformed Services',
@@ -42,7 +42,7 @@ const Programs = () => {
             icon: <Shield className="text-white" size={32} />,
             color: 'bg-[#1E3A8A]', // Dark Blue
             details: ['Kerala Police Constable', 'Fire Force', 'Excise & Forest Guard', 'SI Selection'],
-            image: 'https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&q=80&w=800'
+            image: 'https://whataftercollege.com/wp-content/uploads/2018/05/IPS-Selection.jpg'
         }
     ];
 
@@ -50,7 +50,18 @@ const Programs = () => {
         <div className="pt-24 pb-20">
             <section className="bg-slate-50 py-16">
                 <div className="container mx-auto px-4">
-                    <SectionHeader title="Programs Offered" subtitle="Specialized Coaching" />
+                    <SectionHeader
+    title={
+      <>
+        Programs Offered
+      </>
+    }
+    subtitle={
+      <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
+        Specialized Coaching
+      </span>
+    }
+  />
                     <p className="max-w-3xl mx-auto text-center text-slate-600 mb-16 text-lg">
                         We provide targeted coaching for various wings of the defence and paramilitary forces. Our programs are designed to cover every aspect of the selection process.
                     </p>

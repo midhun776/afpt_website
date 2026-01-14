@@ -15,7 +15,7 @@ const About = () => {
             {/* Breadcrumb/Header Area */}
             <div className="bg-slate-900 py-20 text-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/20 -skew-x-12 translate-x-1/2"></div>
-                <div className="container mx-auto px-4 relative z-10">
+                <div className="container mx-auto px-10 relative z-10">
                     <h1 className="text-4xl md:text-6xl font-display font-extrabold mb-4">About AFPT</h1>
                     <p className="text-primary-light uppercase tracking-[0.3em] font-bold">Pride of Kochi | Spirit of Defence</p>
                 </div>
@@ -51,8 +51,8 @@ const About = () => {
                         </div>
                     </div>
                     <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-                        <img src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?auto=format&fit=crop&q=80&w=600" alt="Training" className="rounded-2xl shadow-lg mt-8" />
-                        <img src="https://images.unsplash.com/photo-1444676632488-26a136c45b9b?auto=format&fit=crop&q=80&w=600" alt="Drills" className="rounded-2xl shadow-lg" />
+                        <img src="https://www.shutterstock.com/editorial/image-editorial/M1TcQ5y4M1T1cd11ODQ3NTg=/indian-army-training-cadets-display-their-martial-440nw-14087892l.jpg" alt="Training" className="rounded-2xl shadow-lg mt-8" />
+                        <img src="https://images.pexels.com/photos/163443/war-desert-guns-gunshow-163443.jpeg?cs=srgb&dl=pexels-pixabay-163443.jpg&fm=jpg" alt="Drills" className="rounded-2xl shadow-lg" />
                     </div>
                 </div>
             </section>
@@ -91,7 +91,18 @@ const About = () => {
 
             {/* Core Values */}
             <section className="section-padding">
-                <SectionHeader title="Our Core Values" subtitle="What defines us" />
+                <SectionHeader
+    title={
+      <>
+        Our Core Values
+      </>
+    }
+    subtitle={
+      <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
+        What defines us
+      </span>
+    }
+  />
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {values.map((v, i) => (
                         <div key={i} className="group p-8 text-center hover:bg-primary transition-all duration-500 rounded-2xl border border-slate-100 shadow-sm hover:shadow-2xl">

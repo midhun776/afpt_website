@@ -39,13 +39,13 @@ const Home = () => {
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-10"></div>
                     <img
-                        src="https://images.unsplash.com/photo-1590403371191-729935f00e54?auto=format&fit=crop&q=80&w=2000"
+                        src="https://wallpapercave.com/wp/wp4869444.jpg"
                         alt="Defence Training"
                         className="w-full h-full object-cover"
                     />
                 </div>
 
-                <div className="container mx-auto px-4 relative z-20">
+                <div className="container mx-auto px-10 relative z-20">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -119,7 +119,7 @@ const Home = () => {
                     <h2 className="text-3xl md:text-5xl font-display font-bold mb-8">
                         "Your journey from an Aspirant to a <span className="text-slate-900">Soldier</span> starts here."
                     </h2>
-                    <p className="max-w-2xl mx-auto text-primary-light text-lg mb-10">
+                    <p className="max-w-2xl mx-auto text-white text-lg mb-10">
                         Join Kochi's most trusted pre-recruitment training academy. We don't just teach for exams, we build your character for the uniform.
                     </p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -131,7 +131,7 @@ const Home = () => {
                         ].map((stat, i) => (
                             <div key={i}>
                                 <div className="text-4xl font-extrabold mb-2 font-display">{stat.value}</div>
-                                <div className="text-primary-light uppercase tracking-widest text-xs font-bold">{stat.label}</div>
+                                <div className="text-white/80 uppercase tracking-widest text-xs font-bold">{stat.label}</div>
                             </div>
                         ))}
                     </div>
@@ -144,7 +144,7 @@ const Home = () => {
                     <div className="lg:w-1/2 relative">
                         <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
                             <img
-                                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1000"
+                                src="https://media.gettyimages.com/id/143469090/video/green-berets-doing-push-ups.jpg?s=640x640&k=20&c=LXLzE6ZfVHQvNzLmVG6N1CsvYW94LJrmMpYv8FGeZ7M="
                                 alt="Classroom Training"
                                 className="w-full h-auto"
                             />

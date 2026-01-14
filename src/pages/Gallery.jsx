@@ -5,21 +5,32 @@ const Gallery = () => {
     const categories = ['All', 'Training', 'Classroom', 'Physical', 'Events'];
 
     const images = [
-        { url: 'https://images.unsplash.com/photo-1590403371191-729935f00e54?auto=format&fit=crop&q=80&w=600', cat: 'Physical', title: 'Endurance Training' },
-        { url: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600', cat: 'Classroom', title: 'Written Exam Coaching' },
-        { url: 'https://images.unsplash.com/photo-1577741314755-048d8525d31e?auto=format&fit=crop&q=80&w=600', cat: 'Training', title: 'Uniform Prep' },
-        { url: 'https://images.unsplash.com/photo-1444676632488-26a136c45b9b?auto=format&fit=crop&q=80&w=600', cat: 'Physical', title: 'Drill Session' },
-        { url: 'https://images.unsplash.com/photo-1585800454359-59eb4e1564ce?auto=format&fit=crop&q=80&w=600', cat: 'Events', title: 'Motivational Talk' },
-        { url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600', cat: 'Classroom', title: 'Mock Test' },
-        { url: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80&w=600', cat: 'Training', title: 'Spirit of Defence' },
-        { url: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&q=80&w=600', cat: 'Physical', title: 'Strength Drills' },
-        { url: 'https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&q=80&w=600', cat: 'Events', title: 'Passing Out Guidance' },
+        { url: 'https://images.pexels.com/photos/163443/war-desert-guns-gunshow-163443.jpeg?cs=srgb&dl=pexels-pixabay-163443.jpg&fm=jpg', cat: 'Physical', title: 'Endurance Training' },
+        { url: 'https://w0.peakpx.com/wallpaper/724/101/HD-wallpaper-special-forces-indian-army.jpg', cat: 'Classroom', title: 'Written Exam Coaching' },
+        { url: 'https://wallpapers.com/images/hd/marching-indian-army-sjs3875ri3m6tmi5.jpg', cat: 'Training', title: 'Uniform Prep' },
+        { url: 'https://wallpapercave.com/wp/wp3499071.jpg', cat: 'Physical', title: 'Drill Session' },
+        { url: 'https://w0.peakpx.com/wallpaper/274/931/HD-wallpaper-navy-fleet-transport-graphy.jpg', cat: 'Events', title: 'Motivational Talk' },
+        { url: 'https://images.pexels.com/photos/29850312/pexels-photo-29850312/free-photo-of-indian-naval-officers-marching-in-formation.jpeg', cat: 'Classroom', title: 'Mock Test' },
+        { url: 'https://images.pexels.com/photos/20258/pexels-photo.jpg?cs=srgb&dl=pexels-chaikong2511-20258.jpg&fm=jpg', cat: 'Training', title: 'Spirit of Defence' },
+        { url: 'https://images.pexels.com/photos/13315962/pexels-photo-13315962.jpeg?cs=srgb&dl=pexels-pramodtiwari-13315962.jpg&fm=jpg', cat: 'Physical', title: 'Strength Drills' },
+        { url: 'https://w0.peakpx.com/wallpaper/723/743/HD-wallpaper-tear-work-of-indian-army-indian-army.jpg', cat: 'Events', title: 'Passing Out Guidance' },
     ];
 
     return (
         <div className="pt-24 pb-20">
             <section className="container mx-auto px-4">
-                <SectionHeader title="Training Gallery" subtitle="Life at AFPT" />
+                <SectionHeader
+    title={
+      <>
+        Training Gallery
+      </>
+    }
+    subtitle={
+      <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
+        Life at AFPT
+      </span>
+    }
+  />
 
                 {/* Filter Buttons */}
                 <div className="flex flex-wrap justify-center gap-4 mb-12">

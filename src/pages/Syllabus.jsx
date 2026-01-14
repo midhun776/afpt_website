@@ -42,7 +42,18 @@ const Syllabus = () => {
     return (
         <div className="pt-24 pb-20">
             <section className="container mx-auto px-4">
-                <SectionHeader title="Syllabus & Training" subtitle="Structured Development" />
+                <SectionHeader
+    title={
+      <>
+        Syllabus & Training
+      </>
+    }
+    subtitle={
+      <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
+        Structured Development
+      </span>
+    }
+  />
                 <p className="max-w-3xl mx-auto text-center text-slate-600 mb-16 text-lg">
                     Our curriculum is meticulously crafted to meet the latest standards of defence selection boards. We ensure balanced growth across academic, physical, and psychological parameters.
                 </p>
