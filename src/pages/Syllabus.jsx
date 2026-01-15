@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
-import { Book, Dumbbell, MessageSquare, ChevronDown, CheckCircle } from 'lucide-react';
+import {
+    Book, Dumbbell, MessageSquare, ChevronDown, CheckCircle,
+    Calculator, Languages, Globe, Brain, Zap, Activity, Trophy, Shield,
+    Mic, Users, BrainCircuit, Award
+} from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 
 const Syllabus = () => {
@@ -7,34 +11,34 @@ const Syllabus = () => {
         {
             title: 'Written Exam Training',
             subtitle: 'Academic Excellence',
-            icon: <Book className="text-primary" size={28} />,
+            icon: <Book className="text-white" size={28} />,
             items: [
-                { name: 'Mathematics', detail: 'Arithmetic, Algebra, Geometry, Trigonometry, and Basic Statistics.' },
-                { name: 'English', detail: 'Grammar, Vocabulary, Comprehension, Précis Writing, and Usage.' },
-                { name: 'General Knowledge', detail: 'Current Affairs, Indian History, Geography, Civics, and Defence awareness.' },
-                { name: 'Reasoning & Aptitude', detail: 'Verbal/Non-Verbal Reasoning, Logical Deductions, and Problem Solving.' },
+                { name: 'Mathematics', detail: 'Arithmetic, Algebra, Geometry, Trigonometry, and Basic Statistics.', icon: <Calculator className="text-primary" size={24} /> },
+                { name: 'English', detail: 'Grammar, Vocabulary, Comprehension, Précis Writing, and Usage.', icon: <Languages className="text-primary" size={24} /> },
+                { name: 'General Knowledge', detail: 'Current Affairs, Indian History, Geography, Civics, and Defence awareness.', icon: <Globe className="text-primary" size={24} /> },
+                { name: 'Reasoning & Aptitude', detail: 'Verbal/Non-Verbal Reasoning, Logical Deductions, and Problem Solving.', icon: <Brain className="text-primary" size={24} /> },
             ]
         },
         {
             title: 'Physical Training',
             subtitle: 'Endurance & Strength',
-            icon: <Dumbbell className="text-primary" size={28} />,
+            icon: <Dumbbell className="text-white" size={28} />,
             items: [
-                { name: 'Running & Stamina', detail: '1.6km, 5km timed runs and interval training for peak cardiovascular health.' },
-                { name: 'Strength Drills', detail: 'Push-ups, Pull-ups, Sit-ups, and Squats with correct form and high repetition.' },
-                { name: 'Agility & Obstacles', detail: 'Zig-zag balance, high jump, long jump, and specialized obstacle course training.' },
-                { name: 'Military Drills', detail: 'Basic posture, marching, and discipline-oriented group physical exercises.' },
+                { name: 'Running & Stamina', detail: '1.6km, 5km timed runs and interval training for peak cardiovascular health.', icon: <Zap className="text-primary" size={24} /> },
+                { name: 'Strength Drills', detail: 'Push-ups, Pull-ups, Sit-ups, and Squats with correct form and high repetition.', icon: <Activity className="text-primary" size={24} /> },
+                { name: 'Agility & Obstacles', detail: 'Zig-zag balance, high jump, long jump, and specialized obstacle course training.', icon: <Trophy className="text-primary" size={24} /> },
+                { name: 'Military Drills', detail: 'Basic posture, marching, and discipline-oriented group physical exercises.', icon: <Shield className="text-primary" size={24} /> },
             ]
         },
         {
             title: 'Interview / SSB Preparation',
             subtitle: 'Officer Like Qualities (OLQ)',
-            icon: <MessageSquare className="text-primary" size={28} />,
+            icon: <MessageSquare className="text-white" size={28} />,
             items: [
-                { name: 'Communication Skills', detail: 'Public speaking, voice modulation, and effective expression training.' },
-                { name: 'Group Discussions', detail: 'Active listening, logical arguing, and leadership in collaborative settings.' },
-                { name: 'Psychological Mirroring', detail: 'TAT, WAT, SRT training and personality traits assessment.' },
-                { name: 'Leadership & Confidence', detail: 'Body language, eye contact, and situational leadership exercises.' },
+                { name: 'Communication Skills', detail: 'Public speaking, voice modulation, and effective expression training.', icon: <Mic className="text-primary" size={24} /> },
+                { name: 'Group Discussions', detail: 'Active listening, logical arguing, and leadership in collaborative settings.', icon: <Users className="text-primary" size={24} /> },
+                { name: 'Psychological Mirroring', detail: 'TAT, WAT, SRT training and personality traits assessment.', icon: <BrainCircuit className="text-primary" size={24} /> },
+                { name: 'Leadership & Confidence', detail: 'Body language, eye contact, and situational leadership exercises.', icon: <Award className="text-primary" size={24} /> },
             ]
         }
     ];
@@ -43,17 +47,17 @@ const Syllabus = () => {
         <div className="pt-24 pb-20">
             <section className="container mx-auto px-4">
                 <SectionHeader
-    title={
-      <>
-        Syllabus & Training
-      </>
-    }
-    subtitle={
-      <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
-        Structured Development
-      </span>
-    }
-  />
+                    title={
+                        <>
+                            Syllabus & Training
+                        </>
+                    }
+                    subtitle={
+                        <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
+                            Structured Development
+                        </span>
+                    }
+                />
                 <p className="max-w-3xl mx-auto text-center text-slate-600 mb-16 text-lg">
                     Our curriculum is meticulously crafted to meet the latest standards of defence selection boards. We ensure balanced growth across academic, physical, and psychological parameters.
                 </p>
@@ -84,7 +88,9 @@ const Syllabus = () => {
                                 {module.items.map((item, i) => (
                                     <div key={i} className="flex space-x-4 group">
                                         <div className="mt-1">
-                                            <CheckCircle className="text-primary opacity-40 group-hover:opacity-100 transition-opacity" size={24} />
+                                            <div className="text-primary opacity-40 group-hover:opacity-100 transition-opacity duration-300">
+                                                {item.icon}
+                                            </div>
                                         </div>
                                         <div>
                                             <h4 className="text-lg font-bold text-slate-900 mb-1">{item.name}</h4>

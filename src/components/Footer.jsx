@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Shield, Mail, Phone, MapPin, Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
+import logo from '../assets/afpt_logo.jpg';
 
 const Footer = () => {
     return (
@@ -9,7 +10,9 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div>
                         <div className="flex items-center space-x-2 mb-6">
-                            <Shield className="text-primary" size={32} />
+                            <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white">
+                                <img src={logo} alt="AFPT Logo" className="w-full h-full object-cover" />
+                            </div>
                             <span className="text-2xl font-bold font-display tracking-tight">AFPT KOCHI</span>
                         </div>
                         <p className="text-slate-400 mb-6 leading-relaxed">

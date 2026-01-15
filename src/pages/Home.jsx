@@ -34,7 +34,7 @@ const Home = () => {
     return (
         <div className="overflow-hidden">
             {/* Hero Section */}
-            <section className="relative h-screen flex items-center pt-20">
+            <section className="relative min-h-screen flex items-center pt-32 pb-20">
                 {/* Background Image Overlay */}
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-10"></div>
@@ -45,7 +45,7 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="container mx-auto px-10 relative z-20">
+                <div className="container mx-auto px-4 sm:px-10 relative z-20">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -55,11 +55,11 @@ const Home = () => {
                         <span className="inline-block py-1 px-4 bg-primary/20 backdrop-blur-md border border-primary text-primary font-bold text-sm tracking-widest uppercase mb-6 rounded-full">
                             Academy of Future Defenders
                         </span>
-                        <h1 className="text-5xl md:text-7xl font-display font-extrabold text-white leading-tight mb-6">
+                        <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-extrabold text-white leading-tight mb-6">
                             Train with <span className="text-primary italic">Discipline</span>. <br />
                             Serve with <span className="text-defence-saffron italic">Pride</span>.
                         </h1>
-                        <p className="text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
+                        <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
                             ARMED FORCES PRE-RECRUITMENT TRAINING (AFPT) Kochi provides world-class coaching for aspirants dedicated to serving the nation in the Indian Armed Forces.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -74,7 +74,7 @@ const Home = () => {
                 </div>
 
                 {/* Scroll Indicator */}
-                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+                <div className="hidden lg:flex absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
                     <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
                         <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>

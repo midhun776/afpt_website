@@ -7,17 +7,17 @@ const Contact = () => {
         <div className="pt-24 pb-20">
             <section className="container mx-auto px-4">
                 <SectionHeader
-    title={
-      <>
-        Contact AFPT Kochi
-      </>
-    }
-    subtitle={
-      <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
-        Get in Touch
-      </span>
-    }
-  />
+                    title={
+                        <>
+                            Contact AFPT Kochi
+                        </>
+                    }
+                    subtitle={
+                        <span className="block mb-2 text-green-600 uppercase tracking-widest text-xs font-bold">
+                            Get in Touch
+                        </span>
+                    }
+                />
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     {/* Contact Information */}
@@ -29,7 +29,7 @@ const Contact = () => {
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
                             <div className="flex space-x-4 group p-4 rounded-2xl hover:bg-slate-50 transition-colors">
-                                <div className="bg-primary/10 p-4 rounded-xl text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                                <div className="bg-primary/10 p-4 rounded-xl text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all flex items-center justify-center">
                                     <MapPin size={24} />
                                 </div>
                                 <div>
@@ -41,7 +41,7 @@ const Contact = () => {
                             </div>
 
                             <div className="flex space-x-4 group p-4 rounded-2xl hover:bg-slate-50 transition-colors">
-                                <div className="bg-primary/10 p-4 rounded-xl text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                                <div className="bg-primary/10 p-4 rounded-xl text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all flex items-center justify-center">
                                     <Phone size={24} />
                                 </div>
                                 <div>
@@ -52,7 +52,7 @@ const Contact = () => {
                             </div>
 
                             <div className="flex space-x-4 group p-4 rounded-2xl hover:bg-slate-50 transition-colors">
-                                <div className="bg-primary/10 p-4 rounded-xl text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                                <div className="bg-primary/10 p-4 rounded-xl text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all flex items-center justify-center">
                                     <Mail size={24} />
                                 </div>
                                 <div>
@@ -63,7 +63,7 @@ const Contact = () => {
                             </div>
 
                             <div className="flex space-x-4 group p-4 rounded-2xl hover:bg-slate-50 transition-colors">
-                                <div className="bg-primary/10 p-4 rounded-xl text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                                <div className="bg-primary/10 p-4 rounded-xl text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-all flex items-center justify-center">
                                     <Clock size={24} />
                                 </div>
                                 <div>
